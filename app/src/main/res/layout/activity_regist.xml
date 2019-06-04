@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <TextView
+        android:id="@+id/titleJoin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/titleJoin"
+        android:layout_marginTop="3dp"
+        android:text="    이름 :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/JoinName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleJoin"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textID2"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/JoinName"
+        android:layout_marginTop="12dp"
+        android:text="    아이디 :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/JoinID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JoinName"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/IDcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JoinID"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="4dp"
+        android:background="#00ff0000"
+        android:text="중복 Check"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:id="@+id/textPassW2"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/IDcheck"
+        android:layout_marginTop="24dp"
+        android:text="   비밀번호 :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/JoinPassW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IDcheck"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:hint="PassWord"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textPassWcheck"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/JoinPassW"
+        android:layout_marginTop="12dp"
+        android:text="   비밀번호 확인 :"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/JoinPassWcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JoinPassW"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:hint="PassWord"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textNum"
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/JoinPassWcheck"
+        android:layout_marginTop="36dp"
+        android:text="   폰 번호 : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/JoinNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JoinPassWcheck"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/noneBar"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/JoinNum"
+        android:layout_marginTop="-12dp"
+        android:gravity="center"
+        android:text="(-제외 번호만 입력)"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnJoinCom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noneBar"
+        android:layout_marginTop="10dp"
+        android:background="#00ff0000"
+        android:text="회원가입"
+        android:textSize="30sp" />
+
+
+
+
+</RelativeLayout>

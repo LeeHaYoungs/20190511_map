@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@drawable/back3">
+
+    <TextView
+        android:id="@+id/txtSet"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Setting"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/safeRangeB"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtSet"
+        android:layout_marginTop="3dp"
+        android:text="안심존 범위 설정" />
+
+    <Button
+        android:id="@+id/soundB"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/safeRangeB"
+        android:layout_marginTop="47dp"
+        android:text="소리 설정" />
+
+    <Button
+        android:id="@+id/bluetoothB"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/soundB"
+        android:layout_marginTop="48dp"
+        android:text="블루 투스 설정" />
+
+
+    <Button
+        android:id="@+id/logoutB"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/bluetoothB"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:text="로그아웃" />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@drawable/back3">
+
+    <TextView
+        android:id="@+id/menuTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="미아 안돼"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/menuTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuTitle1"
+        android:layout_marginTop="-4dp"
+        android:gravity="center"
+        android:text="소중한 내 아이 지키기"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/menuChildLocateB"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/menuTitle2"
+        android:layout_marginTop="49dp"
+        android:text="아이의 현재위치"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/menuSettingB"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/menuChildLocateB"
+        android:layout_marginTop="52dp"
+        android:text="Setting"
+        android:textSize="35sp" />
+</RelativeLayout>
